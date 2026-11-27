@@ -1,6 +1,19 @@
 /infra/secrets/*
 !/infra/secrets/.env.example
 
+# Legacy application is kept locally as migration evidence, not committed
+/reference/
+
+# Node.js and Next.js workspaces
+**/node_modules/
+**/.next/
+**/out/
+**/coverage/
+**/*.tsbuildinfo
+**/next-env.d.ts
+/apps/web/.env*
+!/apps/web/.env.example
+
 # Spring Boot API build output and generated files
 /apps/api/HELP.md
 /apps/api/target/

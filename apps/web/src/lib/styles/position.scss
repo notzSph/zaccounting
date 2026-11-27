@@ -1,0 +1,37 @@
+/**
+* Default classes for position property.
+*
+* Classes Name  --->  {POSITION_TYPE}
+*/
+
+/** Relative */
+.relative {
+  position: relative;
+}
+
+/** Absolute */
+.absolute {
+  position: absolute;
+}
+
+.absolute::before {
+  position: absolute;
+}
+
+.absolute::after {
+  position: absolute;
+}
+
+/** Fixed */
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+/** Isolate */
+.isolate {
+  isolation: isolate;
+}

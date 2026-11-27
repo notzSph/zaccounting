@@ -1,0 +1,38 @@
+/**
+* Default classes for margin & padding property.
+*
+* "br-{SIZE}" ---> All Side Border Radius.
+* "br{AXIS}-{SIZE}" ---> Axis Specific Border Radius.
+* "br{SIDE}-{SIZE}" ---> Side Specific Border Radius.
+*/
+
+@use "./variables.scss" as *;
+
+/** Radius All side */
+.br-0 {
+  border-radius: 0;
+}
+
+.br-1 {
+  border-radius: $tinyRadius;
+}
+
+.br-2 {
+  border-radius: $smallRadius;
+}
+
+.br-3 {
+  border-radius: $mediumRadius;
+}
+
+.br-4 {
+  border-radius: $largeRadius;
+}
+
+.br-5 {
+  border-radius: $veryLargeRadius;
+}
+
+.br-6 {
+  border-radius: $infiniteRadius;
+}
