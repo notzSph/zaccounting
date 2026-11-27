@@ -1,6 +1,5 @@
 /infra/secrets/*
 !/infra/secrets/.env.example
-!/infra/secrets/reference.env.example
 
 # Spring Boot API build output and generated files
 /apps/api/HELP.md
