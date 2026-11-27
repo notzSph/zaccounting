@@ -12,7 +12,7 @@ Self-hosted accounting software in active development. The project is being rebu
 
 ## Project status
 
-- `reference/` contains the existing Next.js application. It is the migration source, not the target application structure.
+- The legacy Next.js application is maintained outside this repository and is intentionally excluded from commits.
 - `apps/api/` contains the new Spring Boot API. Its current vertical slice connects to PostgreSQL and exposes `GET /api/v1/health`.
 - `apps/web/` has not been initialized yet.
 - `infra/docker/compose.yaml` currently provides the PostgreSQL development service. Web, API and Caddy containers are not configured yet.
@@ -98,8 +98,9 @@ docs/                  Architecture, roadmap and development guides
 infra/
   docker/              Docker Compose and container configuration
   secrets/             Local environment files, ignored by Git
-reference/             Existing application retained for migration
 ```
+
+The legacy source application is kept separately and is not included in this repository.
 
 ## Contributing and security
 
