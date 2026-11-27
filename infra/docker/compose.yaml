@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:18.7-bookworm
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:?Set POSTGRES_DB in infra/secrets/.env}
+      POSTGRES_USER: ${POSTGRES_USER:?Set POSTGRES_USER in infra/secrets/.env}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in infra/secrets/.env}
+    ports:
+      - "127.0.0.1:${DB_PORT:?Set DB_PORT in infra/secrets/.env}:5432"
+    volumes:
+      - zaccounting-postgres:/var/lib/postgresql
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  zaccounting-postgres:
