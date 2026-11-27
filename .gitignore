@@ -1,0 +1,28 @@
+/infra/secrets/*
+!/infra/secrets/.env.example
+!/infra/secrets/reference.env.example
+
+# Spring Boot API build output and generated files
+/apps/api/HELP.md
+/apps/api/target/
+/apps/api/.mvn/wrapper/maven-wrapper.jar
+/apps/api/.apt_generated/
+/apps/api/.classpath
+/apps/api/.factorypath
+/apps/api/.project
+/apps/api/.settings/
+/apps/api/.springBeans
+/apps/api/.sts4-cache/
+/apps/api/nbproject/private/
+/apps/api/nbbuild/
+/apps/api/dist/
+/apps/api/nbdist/
+/apps/api/.nb-gradle/
+/apps/api/build/
+
+# IDE files
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
