@@ -1,0 +1,23 @@
+@use "./variables.scss" as var;
+
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.ta-left {
+  text-align: left;
+}
+.underline {
+  text-decoration: underline;
+}
+.td-none {
+  text-decoration: none;
+}
+.font-inherit {
+  font: inherit;
+}

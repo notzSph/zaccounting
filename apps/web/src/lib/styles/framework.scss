@@ -1,0 +1,17 @@
+// Keep the framework source in lib/styles so page styling can use the same
+// class vocabulary without importing the framework's global page reset.
+@use "./breakpoints";
+@use "./flex";
+@use "./height";
+@use "./interactions";
+@use "./max-height";
+@use "./max-width";
+@use "./min-height";
+@use "./min-width";
+@use "./overflow";
+@use "./placement";
+@use "./position";
+@use "./radius";
+@use "./spacing";
+@use "./text";
+@use "./width";
