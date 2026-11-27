@@ -6,7 +6,7 @@ Thanks for helping improve zAccounting. The project is in an early migration sta
 
 - Check the [migration roadmap](docs/migration-roadmap.md) and [architecture overview](docs/architecture.md).
 - For a substantial change, open or discuss an issue first so its product and accounting rules are clear.
-- Treat the existing app in `reference/` as evidence of behavior, not as the authority for accounting correctness.
+- Treat the separately maintained legacy app as evidence of behavior, not as the authority for accounting correctness. Do not add its source to this repository.
 - Keep changes focused. Avoid introducing infrastructure or dependencies without a concrete need.
 
 ## Development expectations
